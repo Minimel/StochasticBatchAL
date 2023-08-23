@@ -1,0 +1,5 @@
+strategy: "Dropout"
+sampling_params: 
+  num_inferences: 8
+  uncertainty_metric: "JSD"
+  alpha: 0.5

@@ -1,0 +1,22 @@
+model_name: "ModUNet2D"
+in_channels: 1
+out_channels: null
+channel_list: [64, 128, 256, 512]
+structure: 
+    dropout_rate: 0.5
+    conv_block:
+        weight_standardization: false
+        normalization: "batch_norm"
+        batch_norm_momentum: 0.1
+        activation_fct: "leakyReLU"
+        kernel_size: 3
+        stride: 1
+        padding: 1
+    pooling:
+        kernel_size: 2
+        stride: 2
+        padding: 0
+    upconv: 
+        kernel_size: 2
+        stride: 2
+        padding: 0

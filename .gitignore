@@ -1,0 +1,26 @@
+# Results files
+*.ckpt
+metrics.json
+
+# Python caches
+__pycache__/
+*.pyc
+*checkpoint.ipynb
+
+# VS code specific
+.vscode/settings.json
+.vscode/launch.json
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# Other files
+tmux-client*
+example_config.yaml
+comet_config.yaml
+time.json
+
+# output folders
+lightning_logs/

@@ -1,0 +1,3 @@
+strategy: "LearningLoss"
+sampling_params: 
+  num_subset_indices: 'all'

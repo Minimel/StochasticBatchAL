@@ -1,0 +1,9 @@
+strategy: "Dropout"
+sampling_params: 
+  num_inferences: 8
+  uncertainty_metric: "JSD"
+  alpha: 0.5
+  RandomPacks: 
+    resampling: False
+    num_groups: null  # If resampling is True
+    aggregation: "mean"

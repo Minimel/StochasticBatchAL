@@ -1,0 +1,9 @@
+strategy: "TTA"
+sampling_params: 
+  num_inferences: 8
+  uncertainty_metric: "JSD"
+  alpha: 0.5
+  transform:
+    rotation: 10
+    gauss_noise: 
+        std: 0.01

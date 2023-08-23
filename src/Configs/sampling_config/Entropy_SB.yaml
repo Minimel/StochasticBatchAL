@@ -1,0 +1,6 @@
+strategy: "Entropy"
+sampling_params: 
+  RandomPacks: 
+    resampling: False
+    num_groups: null     # If resampling is True
+    aggregation: "mean"

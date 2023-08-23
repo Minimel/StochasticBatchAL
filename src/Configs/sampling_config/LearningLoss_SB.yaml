@@ -1,0 +1,7 @@
+strategy: "LearningLoss"
+sampling_params: 
+  num_subset_indices: "all"
+  RandomPacks: 
+    resampling: False
+    num_groups: null    # If resampling is True
+    aggregation: "mean"

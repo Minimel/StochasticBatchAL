@@ -1,0 +1,41 @@
+train_indices : null
+num_workers: 16
+num_epochs: 75
+batch_size: 4
+num_steps_per_epoch: 250
+lr: 0.000001
+weight_decay: 0.0001
+sched: 
+    max_epoch: 75
+    warmup_max: 10
+    multiplier: 100
+    update_interval: "epoch"
+    update_freq: 1
+loss: 
+    normalize_fct: null
+    reduction: "none"
+    alpha_CE: 0.5
+    weighted_CE: false
+    n_classes: null
+    scale_loss: false
+
+# The following lines are added to the original config file for LearningLoss
+additional_params: 
+    module: "LearningLoss"
+    lossmodule_feature_size: [50, 25, 12, 6]
+    loss_module_init_lr: 0.001
+    loss_module_sched_momentum: 0.9
+    loss_module_sched_wdecay: 0.0005
+    loss_module_sched_freq: [75]
+    loss_module_weight: 1.0
+    loss_module_margin: 0.0
+    loss_module_epoch_stop_gradient: 20
+    loss_module_num_subset_indices: "all"
+    
+transform:
+    rotation: 10
+    gauss_noise: 
+        std: 0.01
+sampling:
+    budget: null
+    num_cycles: 20
