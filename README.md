@@ -46,7 +46,7 @@ Experiments can be run with `Bash_scripts/bash_AL_hippocampus.sh <path-to-data_d
 For prostate data, replace 'hippocampus' by 'prostate'. 
 
 - `<experiment_name>` : can be any name under which we would like to save the experiment
-- `<sample_set_index>` : integer from 1 to 5 to select the row with the corresponding initial indices to use (ie: 1 will select the first row of indices, 2, the second row, etc.) These indices are located in `Configs/experiment/hippocampus_indices` or `Configs/experiment/prostate_indices` 
+- `<sample_set_index>` : integer from 1 to 5 to select the row with the corresponding initial indices to use (ie: 1 will select the first row of indices, 2, the second row, etc.) These indices are located in `Configs/init_indices/hippocampus_indices` or `Configs/init_indices/prostate_indices` 
 - `<train_config>` : config file for training hyperparameters. Use `train_learningloss_config.yaml` if using learning Loss strategy (with `sampling_config/LearningLoss.yaml` sampling config), else `train_config.yaml`.
 - `<sampling_config>` : name of config file in the form `sampling_config/<filename>`. Available config files are located in the folder `Configs/sampling_config`<br/> <br/>
 
